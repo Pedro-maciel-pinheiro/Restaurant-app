@@ -22,7 +22,7 @@ export default function Layout() {
         return <Loading/>
     }
     return (
-        <SafeAreaView className="flex-1 bg-gray-900  " >
+        <SafeAreaView className="flex-1 bg-zinc-100 " >
 
             <Slot />
 

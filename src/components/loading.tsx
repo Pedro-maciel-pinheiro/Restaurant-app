@@ -3,8 +3,8 @@ import  Colors  from "tailwindcss/colors";
 
 export function Loading(){
     return (
-        <View className="flex-1 items-center justify-center bg-slate-900"> 
-            <ActivityIndicator color={Colors.white}/>
+        <View className="flex-1 items-center justify-center bg-zinc-100"> 
+            <ActivityIndicator color={Colors.black}/>
         </View>
     )
 }

@@ -9,8 +9,8 @@ type LinkButtonProps = LinkProps<string> & {
 export function LinkButton({title, ...rest}:LinkButtonProps ){
     return(
         
-        <Link className="text-black text-center text-base font-bold bg-slate-300
-        rounded-full " 
+        <Link className="text-black text-center text-base font-bold " 
+        
         {...rest}
         >
             

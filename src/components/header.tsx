@@ -13,32 +13,34 @@ type HeaderProps = {
 
 export function Header({ title, cartQuantityItems = 0 }: HeaderProps) {
     return (
-        <View className='flex-row items-center border-b 
-         border-slate-700 pb-5 mx-5'>
+        <View className='flex-row items-center justify-around border-b 
+         border-slate-800 pb-2 mx-1'>
 
 
-            <View className='flex-1'>
-                <Image source={require("@/assets/logo.png")}
-                    className='h-6 w-32'
-                />
-                <Text className='text-white text-xl font-heading mt-2'> {
+            <View className='flex-row '>
+                 <Image source={require("@/assets/images/LOGO_Pinheiro-Ferraço-1-black.png")}
+                    className=' h-20 w-14 '
+                /> 
+                
+            </View>
+
+            <Text className='text-xl font-heading mt-2 '> {
                     title
                 }
 
                 </Text>
-            </View>
 
             {
                 cartQuantityItems > 0 &&
                 <Link href="/cart" asChild>
-                    <TouchableOpacity className='relative'>
-                        <View className='bg-lime-300 w-5 h-5 rounded-full 
+                    <TouchableOpacity className='relative '>
+                        <View className='bg-orange-500 w-5 h-5 rounded-full 
                         items-center justify-center top-2 z-10  -right-3.5 '>
                             <Text className='text-slate-900 font-bold text-xs'>
                                 {cartQuantityItems}
                             </Text>
                         </View>
-                        <Feather name='shopping-bag' color={colors.white} size={24} />
+                        <Feather name='shopping-bag' color={colors.black} size={28} />
                     </TouchableOpacity>
                 </Link>
             }

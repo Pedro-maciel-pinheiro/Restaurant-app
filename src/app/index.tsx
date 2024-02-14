@@ -49,7 +49,7 @@ export default function Home() {
                 renderItem={({ item }) => <CategoryButton title={item}
                     isSelected={item === category} onPress={() => handleCategorySelect(item)} />}
                 horizontal
-                className="max-h-10 mt-5"
+                className=" max-h-10 mt-5"
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={{ gap: 12, paddingHorizontal: 20 }}
             />
@@ -57,6 +57,7 @@ export default function Home() {
 
 
             <SectionList
+                
                 ref={sectionListRef}
                 sections={MENU}
                 keyExtractor={(item) => item.id}
@@ -70,7 +71,7 @@ export default function Home() {
                 
 
                 renderSectionHeader={({ section: { title } }) => (
-                    <Text className="text-white text-xl font-heading
+                    <Text className="text-black text-xl font-heading
                 mt-8 mb-3"> {title} </Text> ) }
                         
                 className="flex-1 p-6"    

@@ -38,18 +38,18 @@ export default function Product() {
               
 
             <View className="flex-1 p-5 mt-8">
-                <Text className="text-white text-2xl font-heading">{product.title}</Text>
-                <Text className="text-lime-400 text-2xl font-heading my-2">
+                <Text className="text-slate-800 text-2xl font-heading">{product.title}</Text>
+                <Text className="text-orange-500 text-2xl font-heading my-2">
                     {formatCurrency(product.price)}
                 </Text>
 
-                <Text className="text-slate-300 font-body text-base leading-6 mb-6">
+                <Text className="text-slate-800 font-body text-base leading-6 mb-6">
                     {product.description}
                 </Text>
 
                 {product.ingredients.map((ingredient) => (
                     <Text key={ingredient}
-                        className="text-slate-300 text-base leading-6">
+                        className="text-slate-800 text-base leading-6">
                         {"\u2022"} {ingredient}
 
                     </Text>
@@ -65,7 +65,7 @@ export default function Product() {
                             Adicionar ao pedido
                          </Button.Text>
                      </Button>
-                     <LinkButton  title="Voltar ao Menu" href="/">Teste</LinkButton>
+                     <LinkButton  title="Voltar ao Menu" href="/"></LinkButton>
                         
                        
                   

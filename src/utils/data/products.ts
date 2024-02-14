@@ -1,42 +1,45 @@
+import { View } from "react-native";
+
 const MENU = [
   {
     title: "Lanche do dia",
     data: [
       {
         id: "1",
-        title: "X-React",
+        title: "X-Surpresa",
         price: 24.9,
         description:
-          "Um hamburger tão bonito que me deu fome enquanto eu fazia esse layout para o projeto...",
-        cover: require("../../assets/products/cover/1.png"),
-        thumbnail: require("../../assets/products/thumbnail/1.png"),
+          "Os ingredientes desse hambúrguer mudam toda semana, então você sempre terá uma surpresa...",
+        cover: require("../../assets/products/cover/1.jpg"),
+        thumbnail: require("../../assets/products/thumbnail/1.jpg"),
         ingredients: [
           "Pão brioche;",
-          "2x carnes smash (blend da casa) de 80g;",
-          "Queijo cheddar;",
-          "Alface;",
-          "Tomate;",
-          "Picles;",
-          "Cebola;",
+          "2x carnes ou frango",
+          "Queijo ou cheddar ;",
+          "Os outros ingredientes são surpresa!",
           "Molho da casa;",
         ],
       },
     ],
   },
+
+  ///hamburger
+
   {
     title: "Promoções",
     data: [
       {
         id: "2",
-        title: "X-JavaScript",
+        title: "X-Tudo",
         price: 34.9,
         description:
-          "Os ingredientes desse hambúrguer mudam toda semana, então você sempre terá uma surpresa...",
-        cover: require("../../assets/products/cover/2.png"),
-        thumbnail: require("../../assets/products/thumbnail/2.png"),
+          "Saboreie a grandiosidade do Hamburger X-Tudo: uma explosão de sabores em um só lugar...",
+        cover: require("../../assets/products/cover/2.jpg"),
+        thumbnail: require("../../assets/products/thumbnail/2.jpg"),
         ingredients: [
           "Pão brioche;",
           "2x carnes smash (blend da casa) de 80g;",
+          "2x file de frango  40g;",
           "Queijo cheddar;",
           "Alface;",
           "Tomate;",
@@ -45,14 +48,15 @@ const MENU = [
           "Molho da casa;",
         ],
       },
+
       {
         id: "3",
-        title: "X-Cobol",
+        title: "X-Thunder",
         price: 32.7,
         description:
-          "Aquele hambúrguer que não podemos tirar do cardápio devido aos clientes mais antigos da hamburgueria...",
-        cover: require("../../assets/products/cover/3.png"),
-        thumbnail: require("../../assets/products/thumbnail/3.png"),
+          "Desperte seus sentidos com o Hamburger X-Thunder: uma tempestade de sabores intensos...",
+        cover: require("../../assets/products/cover/3.jpg"),
+        thumbnail: require("../../assets/products/thumbnail/3.jpg"),
         ingredients: [
           "Pão brioche;",
           "2x carnes smash (blend da casa) de 80g;",
@@ -64,14 +68,15 @@ const MENU = [
           "Molho da casa;",
         ],
       },
+
       {
         id: "4",
-        title: "X-Tailwind",
+        title: "X-Rain",
         price: 29.9,
         description:
-          "Aquele que você não gosta de primeira, mas depois fica viciado e não consegue mais largar...",
-        cover: require("../../assets/products/cover/4.png"),
-        thumbnail: require("../../assets/products/thumbnail/4.png"),
+          "Sinta a suavidade celestial do Hamburger X-Rain, onde a perfeita harmonia de sabores se entrelaça...",
+        cover: require("../../assets/products/cover/4.jpg"),
+        thumbnail: require("../../assets/products/thumbnail/4.jpg"),
         ingredients: [
           "Pão brioche;",
           "2x carnes smash (blend da casa) de 80g;",
@@ -85,56 +90,82 @@ const MENU = [
       },
     ],
   },
+
+  ///Dessert
+
   {
     title: "Sobremesa",
     data: [
       {
         id: "5",
-        title: "Sorvete com Brownie",
-        price: 18.9,
+        title: "Pudim de leite",
+        price: 12.9,
         description:
-          "Uma sobremesa deliciosa para saborear. Escolha o sorvete e a calda que desejar...",
-        cover: require("../../assets/products/cover/5.png"),
+          "Uma sobremesa deliciosa para saborear...",
+        cover: require("../../assets/products/cover/5.jpg"),
         thumbnail: require("../../assets/products/thumbnail/5.png"),
         ingredients: [
-          "1x Brownie;",
-          "1x Bola de sorvete a sua escolha",
-          "Escolha sua calda;",
+          "pote com (250g)",
+          "calda de açúcar;",
         ],
       },
       {
         id: "6",
         title: "Cupcake",
-        price: 22.9,
+        price: 18.9,
         description:
-          "Um delicioso Cupcake para adoçar. Escolha o sabor que você gosta...",
+          "Um delicioso Cupcake para adoçar...",
         cover: require("../../assets/products/cover/6.png"),
         thumbnail: require("../../assets/products/thumbnail/6.png"),
         ingredients: ["Escolha o sabor;", "Chantilly;"],
       },
     ],
   },
+
+  //  Drinks
+  
   {
     title: "Bebidas",
     data: [
       {
         id: "7",
-        title: "Hmmm, coquinha!",
-        price: 6.9,
+        title: "Coca-Cola (Lata)",
+        price: 3.5,
         thumbnail: require("../../assets/products/thumbnail/7.png"),
         cover: require("../../assets/products/cover/7.png"),
         description:
-          "Uma coca super gelada para acompanhar o seu super lanche...",
+          "Uma Coca super gelada para acompanhar o seu super lanche...",
+        ingredients: [],
+      },
+      {
+        id: "8",
+        title: "Fanta Laranja (Lata)",
+        price: 3.0,
+        thumbnail: require("../../assets/products/thumbnail/8.jpg"),
+        cover: require("../../assets/products/cover/8.jpg"),
+        description:
+          "Uma Fanta super gelada para acompanhar o seu super lanche...",
+        ingredients: [],
+      },
+
+      {
+        id: "9",
+        title: "Pepsi (Lata)",
+        price: 3.2,
+        thumbnail: require("../../assets/products/thumbnail/9.jpg"),
+        cover: require("../../assets/products/cover/9.jpg"),
+        description:
+          "Uma Pepsi super gelada para acompanhar o seu super lanche...",
         ingredients: [],
       },
     ],
   },
-]
+];
 
-const PRODUCTS = MENU.map((item) => item.data).flat()
+const PRODUCTS = MENU.map((item) => item.data).flat();
 
-const CATEGORIES = MENU.map((item) => item.title)
+const CATEGORIES = MENU.map((item) => item.title);
 
-type ProductProps = (typeof PRODUCTS)[0]
+type ProductProps = (typeof PRODUCTS)[0];
 
-export { MENU, PRODUCTS, CATEGORIES, ProductProps }
+export { MENU, PRODUCTS, CATEGORIES, ProductProps };
