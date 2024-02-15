@@ -13,13 +13,13 @@ type HeaderProps = {
 
 export function Header({ title, cartQuantityItems = 0 }: HeaderProps) {
     return (
-        <View className='flex-row items-center justify-around border-b 
+        <View className='flex-row items-center justify-center border-b 
          border-slate-800 pb-2 mx-1'>
 
 
             <View className='flex-row '>
                  <Image source={require("@/assets/images/LOGO_Pinheiro-Ferraço-1-black.png")}
-                    className=' h-20 w-14 '
+                    className=' h-28 w-20 '
                 /> 
                 
             </View>
@@ -33,10 +33,10 @@ export function Header({ title, cartQuantityItems = 0 }: HeaderProps) {
             {
                 cartQuantityItems > 0 &&
                 <Link href="/cart" asChild>
-                    <TouchableOpacity className='relative '>
+                    <TouchableOpacity className='relative left-8 bottom-1'>
                         <View className='bg-orange-500 w-5 h-5 rounded-full 
                         items-center justify-center top-2 z-10  -right-3.5 '>
-                            <Text className='text-slate-900 font-bold text-xs'>
+                            <Text className='text-slate-900 font-bold text-xs '>
                                 {cartQuantityItems}
                             </Text>
                         </View>
